@@ -1,0 +1,17 @@
+﻿@page
+@model WebApplication.UI.Component.CustomComponentAsPage.Pages.GameModel
+@section Scripts
+{
+    <script>
+        $('#random').on('click', function (e) {
+            var number = Math.floor(Math.random() * 3);
+            var messages = ["Rock", "Paper", "Scissors"];
+            alert(messages[number]);
+        });
+    </script>
+
+}
+<div class="text-center">
+    <h1 class="display-4">Hello from a Custom UI Library, Do you wanna play Rock-Paper-Scissors?</h1>
+    <a class="btn btn-large btn-success" id="random" href="">1-2-3!!!</a>
+</div>
